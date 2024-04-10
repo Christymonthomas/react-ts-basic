@@ -5,21 +5,7 @@ type CourseGoalProps = {
   children: ReactNode;
 };
 
-// export default function CourseGoal({ title, children }: CourseGoalProps) {
-//   return (
-//     <article>
-//       <div>
-//         <h2>{title}</h2>
-//         {children}
-//       </div>
-//       <button>Delete</button>
-//     </article>
-//   );
-// }
-
-// An alternate to above func decleration
-
-const CourseGoal: FC<CourseGoalProps> = ({ title, children }) => {
+export default function CourseGoal({ title, children }: CourseGoalProps) {
   return (
     <article>
       <div>
@@ -29,6 +15,20 @@ const CourseGoal: FC<CourseGoalProps> = ({ title, children }) => {
       <button>Delete</button>
     </article>
   );
-};
+}
 
-export default CourseGoal;
+// An alternate to above func decleration
+
+// const CourseGoal: FC<CourseGoalProps> = ({ title, children }) => {
+//   return (
+//     <article>
+//       <div>
+//         <h2>{title}</h2>
+//         {children}
+//       </div>
+//       <button>Delete</button>
+//     </article>
+//   );
+// };
+
+// export default CourseGoal;
